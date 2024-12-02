@@ -14,6 +14,11 @@ Este projeto foi desenvolvido para criar uma tela de cadastro para novos ingress
 - **HTML:** Linguagem de marcação utilizada para estruturar a página.
 - **CSS:** Linguagem de estilo utilizada para a apresentação visual.
 
+![CadReact](https://github.com/user-attachments/assets/0780ce99-c405-4d13-b028-184308d1a950)
+
+![CadReact](https://github.com/user-attachments/assets/de2676b6-06d1-4e55-ade4-2afe66793143)
+
+
 ## Estrutura do Código
 ```javascript
 import './App.css';
