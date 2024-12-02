@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html{
+  background-color: whitesmoke;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.App{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+padding-top: 7%;
+}
+label{
+  font-family:monospace;
+  font-size: 18px;
+  margin-top: 30px;
+  text-align: left;
+  width: 82%;
+  padding-bottom: 10px;
+}
+form{
+  background-color: white;
+  margin: 0 auto;
+  align-items: center;
+  display:flex;
+  flex-direction: column;
+  width: 630px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 30px rgba(81, 81, 90, 0.397);
+  height: 660px;
+  border-color: rgb(37, 87, 163)!important;
+  border: 2px;
+  border-style: solid;
+}
+
+.top-h1{
+  padding: 0%;
+  margin: 0% auto;
+  background-color: rgb(37, 87, 163);
+  color: white;
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-family:monospace;
+  text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.637);
+  text-shadow: 0px 0px 10px  rgb(10, 10, 10);
+  letter-spacing: -2px;
+}
+select, input{
+  border: 2px;
+  border-style: solid;
+  border-color:  rgb(37, 87, 163);
+  border-radius: 5px;
+  width: 540px;
+  height: 40px;
+  box-sizing: border-box;
+  font-size:15px;
+
+}
+
+
+.Container-button{
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  align-items: center;
+  gap: 200px;
+ 
+}
+
+button{
+  box-shadow: 10px 10px 20px rgba(54, 53, 53, 0.089);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border-radius: 10px;
+  border-color: rgba(245, 222, 179, 0);
+  cursor: pointer;
+  font-size: 15px;
+}
+.button-voltar{
+ background-color: rgba(250, 184, 4, 0.959);
+ padding: 10px 40px 11px 40px;
+}
+.button-gravar{
+ background-color: rgb(79, 190, 34);
+ padding: 15px 50px 15px 50px;
+}
+
+button:hover{
+  transform: scale(1.1);
+  transition: 0.1s;
+}
+.button-gravar:hover{
+  background-color: rgba(31, 148, 21, 0.801);
+}
+.button-voltar:hover{
+  background-color: rgba(253, 165, 1, 0.959);
+}
+
+.focus:focus{
+border-color:rgba(0, 81, 233, 0.904);
+outline: none;
+}
