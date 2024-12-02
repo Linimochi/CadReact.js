@@ -1,77 +1,83 @@
+# Projeto de Cadastro de Ingressantes
 
-<<<<<<< HEAD
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Visão Geral
+Este projeto foi desenvolvido para criar uma tela de cadastro para novos ingressantes nos cursos oferecidos. A aplicação é feita utilizando React, JavaScript, HTML e CSS.
 
-## Available Scripts
+## Funcionalidades
+- **Seleção de Curso:** Os usuários podem selecionar o curso desejado.
+- **Seleção de Estado e Cidade:** Ao selecionar um estado, os campos de cidade correspondentes são automaticamente atualizados, permitindo uma seleção dinâmica e intuitiva.
+- **Formulário de Cadastro:** Os usuários podem preencher o formulário com seus dados.
 
-In the project directory, you can run:
+## Tecnologias Utilizadas
+- **React:** Biblioteca JavaScript para construção de interfaces de usuário.
+- **JavaScript:** Linguagem de programação utilizada para a lógica da aplicação.
+- **HTML:** Linguagem de marcação utilizada para estruturar a página.
+- **CSS:** Linguagem de estilo utilizada para a apresentação visual.
 
-### `npm start`
+## Estrutura do Código
+```javascript
+import './App.css';
+import { useState } from 'react';
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+function App() {
+  const [Estado, setEstado] = useState('');
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  const DefineCity = {
+    '1': ['Mogi das Cruzes', 'Suzano', 'Poá', 'Guararema'],
+    '2': ['Angra dos Reis', 'Niterói', 'Itaboraí'],
+    '3': ['Belo Horizonte', 'Monte Azul', 'Muzambinho'],
+  };
 
-### `npm test`
+  const setDefineCity = (e) => {
+    setEstado(e.target.value);
+  };
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  return (
+    <div className="App">
+      <form>
+        <h1 className="top-h1">Cadastro de Ingressantes</h1>
+        <label>Nome</label>
+        <input type="text" className="focus" />
+        <label>Curso</label>
+        <select className="focus">
+          <option value="" disabled selected hidden>
+            Selecione curso...
+          </option>
+          <option value="1">Matemática</option>
+          <option value="2">Letras</option>
+          <option value="3">Geografia</option>
+        </select>
+        <label>Estado</label>
+        <select onChange={setDefineCity} className="focus">
+          <option value="" disabled selected hidden>
+            Selecione estado...
+          </option>
+          <option value="1">São Paulo</option>
+          <option value="2">Rio de Janeiro</option>
+          <option value="3">Minas Gerais</option>
+        </select>
+        <label>Cidades</label>
+        <select className="focus">
+          <option value="" disabled selected hidden>
+            Selecione cidade...
+          </option>
+          {Estado && DefineCity[Estado].map((Cidade, index) => (
+            <option key={index} value={Cidade}>
+              {Cidade}
+            </option>
+          ))}
+        </select>
+        <div className="Container-button">
+          <button type="submit" className="button-voltar">
+            Voltar
+          </button>
+          <button type="submit" className="button-gravar">
+            Gravar
+          </button>
+        </div>
+      </form>
+    </div>
+  );
+}
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Cad-dinamico
-# Cad-dinamico
-# CadReact.js
-=======
->>>>>>> c9b8656991fd8053bffd27c664dccab918511a7c
-# CadReact.js
-# CadReact.js
+export default App;
