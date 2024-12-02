@@ -1,7 +1,10 @@
 # Projeto de Cadastro de Ingressantes
 
 ## Visão Geral
-Este projeto foi desenvolvido para criar uma tela de cadastro para novos ingressantes nos cursos oferecidos. A aplicação é feita utilizando React, JavaScript, HTML e CSS.
+
+O objetivo desse projeto foi desenvolvido para explorar alterações dinâmicas com uso de frameworks. 
+A ideia é uma interface intuitiva de tela de cadastro de novos ingressantes nos cursos oferecidos. 
+A aplicação é feita utilizando React, JavaScript, HTML e CSS.
 
 ## Funcionalidades
 - **Seleção de Curso:** Os usuários podem selecionar o curso desejado.
