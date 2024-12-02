@@ -1,5 +1,5 @@
-# Getting Started with Create React App
 
+<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -70,4 +70,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # Cad-dinamico
 # Cad-dinamico
+# CadReact.js
+=======
+>>>>>>> c9b8656991fd8053bffd27c664dccab918511a7c
 # CadReact.js
